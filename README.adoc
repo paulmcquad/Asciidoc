@@ -1,0 +1,53 @@
+= AsciiDoc Editor
+Your Name <you@example.com>
+v1.0.0, 2026-10-19
+:toc: left
+:icons: font
+:source-highlighter: rouge
+
+A side-by-side AsciiDoc editor and live preview. Rename the document in the
+header, pick a preview theme, and watch the preview follow your cursor.
+
+== Getting started
+
+Type on the left. The preview on the right updates as you go and *scrolls to
+the block you are editing* — the matching block flashes briefly.
+
+TIP: Drag the splitter to resize, or collapse either pane with the ⟨⟩ button.
+
+=== Code blocks
+
+[source,javascript]
+----
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet('AsciiDoc'));
+----
+
+=== Admonitions
+
+NOTE: Themes are plain CSS objects — adding one is a few lines.
+
+WARNING: Exported HTML embeds the active theme so the file is self-contained.
+
+=== A table
+
+[cols="1,2",options="header"]
+|===
+| Feature | Notes
+| Save .adoc | Uses the document name
+| Save HTML  | Same name, .html, CSS embedded
+| Scroll sync| Preview follows the editor caret
+|===
+
+=== Lists & quotes
+
+* Editable source with configurable syntax highlighting
+* Independent zoom for editor and preview
+* Raw-HTML view via the toolbar toggle
+
+[quote, Stuart Rackham, AsciiDoc author]
+____
+Plain text that reads well and converts to many formats.
+____
